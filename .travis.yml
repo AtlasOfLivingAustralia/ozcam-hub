@@ -4,6 +4,7 @@ jdk:
 branches:
   only:
   - master
+sudo: false
 before_install:
 - rm -rf ~/.gvm
 - curl -s get.gvmtool.net > ~/install_gvm.sh
