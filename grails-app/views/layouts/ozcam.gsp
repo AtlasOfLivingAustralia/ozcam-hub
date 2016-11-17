@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="${request.contextPath}/images/favicon.ico">
 
     <title><g:layoutTitle /></title>
+    <g:render template="/layouts/global" plugin="biocache-hubs"/>
     <r:require modules="ozcam" />
     <style type="text/css">
     body {
@@ -92,11 +93,12 @@
 </head>
 <body class="${pageProperty(name:'body.class')?:'nav-collections'}" id="${pageProperty(name:'body.id')}" onload="${pageProperty(name:'body.onload')}">
 <g:set var="fluidLayout" value="${grailsApplication.config.skin.fluidLayout?.toBoolean()}"/>
+<g:set var="containerType" value="${fluidLayout ? 'container-fluid' : 'container'}"/>
 <alatag:outageBanner />
 <div class="hero-bg"></div>
 <div class="navbar navbar-inverse navbar-relative-top">
     <div class="navbar-inner">
-        <div class="container">
+        <div class="${containerType}">
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -138,18 +140,18 @@
 <!-- Begin Template Content -->
 
 <header class="jumbotron subhead" id="overview">
-    <div class="container">
+    <div class="${containerType}">
         <h1>Search Specimens</h1>
         <p class="hide lead">OZCAM (Online Zoo-log-i-cal Col-lec-tions of Aus-tralian Muse-ums) pro-vides access to an online data-base of records aggre-gated from fau-nal col-lec-tions data-bases in Aus-tralian museums.</p>        </div>
 </header>
 
 <div class="main">
-    <div class="container" id="content">
+    <div class="${containerType}" id="content">
         <g:layoutBody />
         <div class="push"></div>
     </div><!--/.container -->
     <footer class="wamfooter">
-        <div class="container">
+        <div class="${containerType}">
             <div class="row">
                 <div class="span8">
                     <div id="text-7" class="widget widget_text">
