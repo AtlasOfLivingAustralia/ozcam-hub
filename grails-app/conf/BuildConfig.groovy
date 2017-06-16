@@ -57,7 +57,7 @@ grails.project.dependency.resolution = {
         runtime ":cached-resources:1.0"
         runtime ":biocache-hubs:1.3.12"
         runtime ":ala-auth:1.3.4"
-        runtime ":downloads-plugin:1.2.2"
+        runtime ":downloads-plugin:1.3.2"
         runtime ":generic-bootstrap2:1.0.1"
     }
 }
