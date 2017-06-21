@@ -94,7 +94,7 @@
 <body class="${pageProperty(name:'body.class')?:'nav-collections'}" id="${pageProperty(name:'body.id')}" onload="${pageProperty(name:'body.onload')}">
 <g:set var="fluidLayout" value="${grailsApplication.config.skin.fluidLayout?.toBoolean()}"/>
 <g:set var="containerType" value="${fluidLayout ? 'container-fluid' : 'container'}"/>
-<alatag:outageBanner />
+<ala:systemMessage />
 <div class="hero-bg"></div>
 <div class="navbar navbar-inverse navbar-relative-top">
     <div class="navbar-inner">
