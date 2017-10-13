@@ -47,7 +47,7 @@ After testing locally, the same ansible scripts can be used to deploy to the pro
 Comment out any testing line for ozcam.ala.org.au in your /etc/hosts file and add the following line:
 
 ```
-52.63.44.128 ozcam.ala.org.au
+203.101.224.143 ozcam.ala.org.au
 ```
 
 Then deploy to that machine using the following command, replacing "MY_USER_NAME" with your login username:
