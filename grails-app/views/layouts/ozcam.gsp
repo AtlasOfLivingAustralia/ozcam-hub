@@ -7,11 +7,24 @@
     <alatag:addApplicationMetaTags />
     <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1">
 
-    <link rel="shortcut icon" href="${request.contextPath}/images/favicon.ico">
+    <asset:link rel="shortcut icon" href="favicon.ico" />
 
     <title><g:layoutTitle /></title>
+
+    <asset:javascript src="application.js" />
+
+    <asset:javascript src="biocache-hubs.js" />
+
+    <asset:javascript src="hubCore.js" />
+
+    <asset:javascript src="bootstrap.min.js" />
+
     <g:render template="/layouts/global" plugin="biocache-hubs"/>
-    <r:require modules="ozcam" />
+
+   <g:layoutHead />
+   %{-- <asset:deferredScripts />--}%
+
+
     <style type="text/css">
     body {
         background-color: #ffffff !important;
@@ -39,7 +52,17 @@
     }
 
     </style>
-    <r:script disposition='head'>
+
+
+
+ %{-- <asset:stylesheet src="bootstrap-theme.min.css" />
+
+    <asset:stylesheet src="bootstrapwp.css" />--}%
+    %{--<asset:stylesheet src="bootstrapAdditions.css" />--}%
+    <asset:stylesheet src="ozcam.css"/>
+
+
+    <asset:script type="text/javascript">
         // initialise plugins
         jQuery(function(){
             // autocomplete on navbar search input
@@ -87,9 +110,11 @@
 
             $('.helphover').popover({animation: true, trigger:'hover'});
         });
-    </r:script>
-    <r:layoutResources/>
-    <g:layoutHead />
+    </asset:script>
+   %{-- <r:layoutResources/>--}%
+
+
+
 </head>
 <body class="${pageProperty(name:'body.class')?:'nav-collections'}" id="${pageProperty(name:'body.id')}" onload="${pageProperty(name:'body.onload')}">
 <g:set var="fluidLayout" value="${grailsApplication.config.skin.fluidLayout?.toBoolean()}"/>
@@ -99,19 +124,19 @@
 <div class="navbar navbar-inverse navbar-relative-top">
     <div class="navbar-inner">
         <div class="${containerType}">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <a class="brand" href="http://ozcam.org.au/" title="OZCAM" rel="home">OZCAM</a>
             <div class="nav-collapse wam-right">
-                <ul id="main-menu" class="nav">
+                <ul id="main-menu" class="nav navbar-nav">
                     <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47">
                         <a href="http://ozcam.org.au/about/">About</a>
                     </li>
                     <li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-41 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-46">
-                        <a href="http://ozcam.org.au/contributors/">Contributors</span></a>
+                        <a href="http://ozcam.org.au/contributors/"><span>Contributors</span></a>
                         %{--<a href="http://ozcam.org.au/contributors/" class="dropdown-toggle" data-toggle="dropdown">Contributors <span class="caret"></span></a>--}%
                         %{--<ul class="dropdown-menu pull-right">--}%
                             %{--<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-117"><a href="/contributors#ala">Atlas of Living Australia</a></li>--}%
@@ -156,19 +181,19 @@
                 <div class="span8">
                     <div id="text-7" class="widget widget_text">
                         <div class="textwidget">
-                            <p><a href="/contributors/"><img src="${request.contextPath}/images/logo-banner.png" alt="Logos for the various partners of OZCAM" /></a></p>
+                            <p><a href="/contributors/"><asset:image src="logo-banner.png" alt="Logos for the various partners of OZCAM" /></a></p>
                             <p>OZCAM is an initiative of the Council of Heads of Australian Faunal Collections (CHAFC)</p>
                         </div>
                     </div>
                 </div> <!-- /span8 -->
                 <div class="span4">
-                    <a href="http://www.ala.org.au/" target="_black"><img src="${request.contextPath}/images/atlas-poweredby_rgb-lightbg.png" alt=""/></a>
+                    <a href="http://www.ala.org.au/" target="_black"><asset:image src="atlas-poweredby_rgb-lightbg.png" alt=""/></a>
                 </div> <!-- /span4 -->
             </div>
         </div>
     </footer>
     <div class="footer hide">
-        <div style="float: right;padding-right:30px;"><a href="http://www.ala.org.au/" target="_black"><img src="${request.contextPath}/images/atlas-poweredby_rgb-lightbg.png" alt=""/></a></div>
+        <div style="float: right;padding-right:30px;"><a href="http://www.ala.org.au/" target="_black"><asset:image src="atlas-poweredby_rgb-lightbg.png" alt=""/></a></div>
         <span style="padding-left:80px;">OZCAM is an initiative of the Council of Heads of Australian Faunal Collections (CHAFC)</span>
     </div>
 </div>
@@ -190,6 +215,7 @@
     pageTracker._trackPageview();
 </script>
 <!-- JS resources-->
-<r:layoutResources/>
+%{--<asset:deferredScripts />--}%
+<asset:deferredScripts />
 </body>
 </html>

@@ -1875,7 +1875,7 @@ table [class*=span],
 .dropdown-menuZ > li > a:hover > [class*=" icon-"],
 .dropdown-menuZ > .active > a > [class^="icon-"],
 .dropdown-menuZ > .active > a > [class*=" icon-"] {
-    background-image: url("images/glyphicons-halflings-white.png");
+    background-image: url("../images/glyphicons-halflings-white.png");
 }
 .icon-glass {
     background-position: 0      0;
@@ -5964,7 +5964,7 @@ hr.soften {
 /* Base class
 ------------------------- */
 .hero-bg {
-    background: #3498db url(images/jumbo-background.jpg) 50% 0 no-repeat;
+    background: #3498db url("../images/jumbo-background.jpg") 50% 0 no-repeat;
     background-size: cover;
     height: 600px;
     width: 100%;
@@ -6525,7 +6525,7 @@ form.bs-docs-example {
 }
 .bs-docs-sidenav .active .icon-chevron-right,
 .bs-docs-sidenav .active a:hover .icon-chevron-right {
-    background-image: url(images/glyphicons-halflings-white.png);
+    background-image: url("../images/glyphicons-halflings-white.png");
     opacity: 1;
 }
 .bs-docs-sidenav.affix {
@@ -6538,7 +6538,7 @@ form.bs-docs-example {
 }
 .brand {
     padding-left: 10px;
-    background: url(images/OzFinal.png) 0 50% no-repeat;
+    background: url("../images/OzFinal.png") 0 50% no-repeat;
     text-indent: -999px;
     overflow: hidden;
     display: block;
@@ -6624,7 +6624,7 @@ form.bs-docs-example {
         margin-right: -20px;
         margin-left: -20px;
         padding-left: 20px;
-        padding: right: 20px;
+        padding-right: 20px;
     }
     .navbar {
         margin-left: -20px;
