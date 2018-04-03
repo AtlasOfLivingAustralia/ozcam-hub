@@ -5,9 +5,9 @@ grails:
         defaultPackage: au.org.ala.hub
     config:
         locations:
-            - file:/data/avh-hub/config/ozcam-hub-config.properties
-            - file:/data/avh-hub/config/ozcam-hub-config.yml
-            - file:/data/avh-hub/config/ozcam-hub-config.groovy
+            - file:/data/ozcam-hub/config/ozcam-hub-config.properties
+            - file:/data/ozcam-hub/config/ozcam-hub-config.yml
+            - file:/data/ozcam-hub/config/ozcam-hub-config.groovy
     spring:
         transactionManagement:
             proxies: false
@@ -94,7 +94,7 @@ endpoints:
 ---
 
 #logging:
-#  config: /data/avh-hub/config/logback.groovy
+#  config: /data/ozcam-hub/config/logback.groovy
 
 headerAndFooter:
   excludeBootstrapCss: false
@@ -133,8 +133,8 @@ skin:
     orgNameLong: "Online Zoological Collections of Australian Museums"
     orgNameShort: "OZCAM"
     includeBaseUrl: true
-    headerUrl: "classpath:resources/generic-header.jsp" # can be external URL
-    footerUrl: "classpath:resources/generic-footer.jsp" # can be external URL
+#    headerUrl: "classpath:resources/generic-header.jsp" # can be external URL
+#    footerUrl: "classpath:resources/generic-footer.jsp" # can be external URL
     fluidLayout: true
     useAlaBie: true
     taxaLinks:
@@ -154,12 +154,12 @@ security:
 
 server:
     contextPath: /ozcam-hub
-    port: 8086
+#    port: 8080
 
 environments:
     development:
         grails:
-            serverURL: "http://devt.ala.org.au:8086/ozcam-hub"
+            serverURL: "http://devt.ala.org.au:8080/ozcam-hub"
         security:
             cas:
                 appServerName: "https://auth.ala.org.au"
@@ -169,7 +169,7 @@ environments:
                 appServerName: "https://auth.ala.org.au"
     production:
         grails:
-            serverURL: "https://biocache.ala.org.au"
+            serverURL: "https://ozcam.ala.org.au"
         security:
             cas:
                 appServerName: "https://auth.ala.org.au"
