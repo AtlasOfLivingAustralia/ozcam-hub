@@ -22,8 +22,6 @@
     <g:render template="/layouts/global" plugin="biocache-hubs"/>
 
    <g:layoutHead />
-   %{-- <asset:deferredScripts />--}%
-
 
     <style type="text/css">
     body {
@@ -54,13 +52,7 @@
     </style>
 
 
-
- %{-- <asset:stylesheet src="bootstrap-theme.min.css" />
-
-    <asset:stylesheet src="bootstrapwp.css" />--}%
-    %{--<asset:stylesheet src="bootstrapAdditions.css" />--}%
-    <asset:stylesheet src="ozcam.css"/>
-
+   <asset:stylesheet src="ozcam.css"/>
 
     <asset:script type="text/javascript">
         // initialise plugins
@@ -111,9 +103,6 @@
             $('.helphover').popover({animation: true, trigger:'hover'});
         });
     </asset:script>
-   %{-- <r:layoutResources/>--}%
-
-
 
 </head>
 <body class="${pageProperty(name:'body.class')?:'nav-collections'}" id="${pageProperty(name:'body.id')}" onload="${pageProperty(name:'body.onload')}">
@@ -214,8 +203,6 @@
     pageTracker._initData();
     pageTracker._trackPageview();
 </script>
-<!-- JS resources-->
-%{--<asset:deferredScripts />--}%
 <asset:deferredScripts />
 </body>
 </html>

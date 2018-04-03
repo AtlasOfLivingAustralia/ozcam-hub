@@ -112,8 +112,8 @@ bie:
 biocache:
   baseUrl: "http://biocache.ala.org.au/ws"
   apiKey: "api-key-to-use"
-  queryContext: "data_hub_uid:dh2" # data hub uid
-  groupedFacetsUrl: "file:///data/avh-hub/config/grouped_facets_avh.json"
+  queryContext: "data_hub_uid:dh1" # data hub uid
+  groupedFacetsUrl: "file:///data/ozcam-hub/config/grouped_facets_ozcam.json"
 
 spatial:
   baseURL: "http://spatial.ala.org.au/"
