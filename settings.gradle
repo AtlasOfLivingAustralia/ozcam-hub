@@ -1,1 +1,3 @@
 rootProject.name='ozcam-hub'
+//include 'biocache-hubs'
+//project(':biocache-hubs').projectDir = new File('../biocache-hubs')

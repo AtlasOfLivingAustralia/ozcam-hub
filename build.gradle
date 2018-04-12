@@ -1,3 +1,5 @@
+import static org.springframework.boot.gradle.SpringBootPluginExtension.LayoutType.*
+
 buildscript {
     repositories {
         mavenLocal()
@@ -11,7 +13,7 @@ buildscript {
     }
 }
 
-version "1.0-SNAPSHOT"
+version "1.0.1-SNAPSHOT"
 group "au.org.ala"
 
 apply plugin:"eclipse"
@@ -36,14 +38,8 @@ configurations.all {
     resolutionStrategy.cacheChangingModulesFor 1, 'minutes'
 }
 
-bootRepackage {
-    enabled = false
-}
-
-
-
 // Inplace plugin config
-
+//def inplace = true
 // Set to true it needed only for development
 
 dependencies {
@@ -83,14 +79,26 @@ dependencies {
     compile "org.grails.plugins:ala-auth:3.0.2"
 
   //  compile "org.grails.plugins:jquery:1.11.1"
-  //  if(!inplace) {
+ //   if(!inplace) {
         compile "au.org.ala.plugins.grails:biocache-hubs:2.0.3-SNAPSHOT"
-  //  compile "au.org.ala.plugins.grails:biocache-hubs:1.7"
+//    } else {
+        compile project('biocache-hubs')
+ //   }
     //compile "au.org.ala.plugins.grails:ala-ws-plugin:2.0"
         runtime "au.org.ala.plugins.grails:downloads-plugin:2.0.2-SNAPSHOT"
    // }
 
+}
 
+springBoot {
+    buildInfo()
+    layout = WAR
+}
+
+bootRepackage {
+    enabled = true
+    executable = true
+    classifier = 'exec'
 }
 
 bootRun {
