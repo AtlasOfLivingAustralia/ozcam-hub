@@ -36,7 +36,7 @@ spring:
             check-template-location: false
 # Spring Actuator Endpoints are Disabled by Default
 endpoints:
-    enabled: false
+    enabled: true
     jmx:
         enabled: true
 
@@ -105,24 +105,24 @@ headerAndFooter:
 speciesGroupsIgnore: "Animals,Arthropods,Bacteria,Crustaceans,Dicots,Insects,Molluscs,Protozoa"
 
 bie:
-  baseUrl: "http://bie.ala.org.au/"
+  baseUrl: "https://bie.ala.org.au/"
   searchPath: "/search"
   autocompleteHints: "fq='kingdom:Plantae'"
 
 biocache:
-  baseUrl: "http://biocache.ala.org.au/ws"
+  baseUrl: "https://biocache.ala.org.au/ws"
   apiKey: "api-key-to-use"
   queryContext: "data_hub_uid:dh1" # data hub uid
   groupedFacetsUrl: "file:///data/ozcam-hub/config/grouped_facets_ozcam.json"
 
 spatial:
-  baseURL: "http://spatial.ala.org.au/"
+  baseURL: "https://spatial.ala.org.au/"
 
 ala:
-  baseURL: "http://www.ala.org.au"
+  baseURL: "https://www.ala.org.au"
 
 collections:
-  baseUrl: "http://collections.ala.org.au"
+  baseUrl: "https://collections.ala.org.au"
 
 dataQualityChecksUrl: "https://docs.google.com/spreadsheet/pub?key=0AjNtzhUIIHeNdHJOYk1SYWE4dU1BMWZmb2hiTjlYQlE&single=true&gid=0&output=csv"
 
@@ -159,7 +159,7 @@ security:
 environments:
     development:
         grails:
-            serverURL: "http://devt.ala.org.au:8080/ozcam-hub"
+            serverURL: "http://devt.ala.org.au:8080"
         security:
             cas:
                 appServerName: "https://auth.ala.org.au"
