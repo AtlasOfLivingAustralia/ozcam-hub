@@ -1,3 +1,5 @@
+package au.org.ala.biocache.hubs.ozcam
+
 class UrlMappings {
 
 	static mappings = {
