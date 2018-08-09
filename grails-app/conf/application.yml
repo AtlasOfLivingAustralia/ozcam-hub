@@ -27,7 +27,7 @@ info:
         name: '@info.app.name@'
         version: '@info.app.version@'
         grailsVersion: '@info.app.grailsVersion@'
-        description: 'The Australasian Virtual Herbarium'
+        description: 'Online Zoological Collections of Australian Museums'
 spring:
     main:
         banner-mode: "off"
@@ -138,8 +138,8 @@ skin:
     fluidLayout: true
     useAlaBie: true
     taxaLinks:
-       baseUrl:  "http://bie.ala.org.au/species/"
-privacyPolicy: "http://www.ala.org.au/about/terms-of-use/privacy-policy/"
+       baseUrl:  "https://bie.ala.org.au/species/"
+privacyPolicy: "https://www.ala.org.au/about/terms-of-use/privacy-policy/"
 
 map:
     pointColour: "df4a21"
