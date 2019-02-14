@@ -176,13 +176,13 @@
                     </div>
                 </div> <!-- /span8 -->
                 <div class="span4">
-                    <a href="http://www.ala.org.au/" target="_black"><asset:image src="atlas-poweredby_rgb-lightbg.png" alt=""/></a>
+                <a href="https://ala.org.au/"><asset:image src="ALA-powered-by-logo-inline.png" class="poweredByAlaLogo"/></a>
                 </div> <!-- /span4 -->
             </div>
         </div>
     </footer>
     <div class="footer hide">
-        <div style="float: right;padding-right:30px;"><a href="http://www.ala.org.au/" target="_black"><asset:image src="atlas-poweredby_rgb-lightbg.png" alt=""/></a></div>
+        <div style="float: right;padding-right:30px;"><a href="https://ala.org.au/"><asset:image src="ALA-powered-by-logo-inline.png" class="poweredByAlaLogo"/></a></div>
         <span style="padding-left:80px;">OZCAM is an initiative of the Council of Heads of Australian Faunal Collections (CHAFC)</span>
     </div>
 </div>

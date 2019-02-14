@@ -219,3 +219,30 @@ a:hover {
     font-size: 26px;
     font-weight: bold;
 }
+
+#content .nav-tabs > li.active > a,
+#content .nav-tabs > li.active > a:hover {
+    border: 1px solid #bbb;
+    border-bottom: 1px solid white;
+}
+
+
+#content .nav-tabs > li > a:hover {
+    border-color: #bbb #bbb #bbb;
+}
+
+#content .nav-tabs {
+    border-bottom: 1px solid #bbb;
+}
+
+#content .tab-content {
+    padding: 15px;
+    border-bottom: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+}
+
+img.poweredByAlaLogo {
+    height: 65px;
+    margin: 5px;
+}
