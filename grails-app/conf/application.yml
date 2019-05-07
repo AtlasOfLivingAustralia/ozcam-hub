@@ -111,7 +111,7 @@ bie:
 
 biocache:
   baseUrl: "https://biocache.ala.org.au/ws"
-  apiKey: "api-key-to-use"
+  apiKey: "not-your-api-key-to-use"
   queryContext: "data_hub_uid:dh1" # data hub uid
   groupedFacetsUrl: "file:///data/ozcam-hub/config/grouped_facets_ozcam.json"
 
