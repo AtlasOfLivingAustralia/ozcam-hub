@@ -16,7 +16,7 @@ plugins {
     id "com.gorylenko.gradle-git-properties" version "1.4.17"
 }
 
-version "2.1.6-SNAPSHOT"
+version "2.1.5"
 group "au.org.ala"
 
 apply plugin:"eclipse"
@@ -77,7 +77,7 @@ dependencies {
     compile "au.org.ala.plugins.grails:downloads-plugin:2.0.9"
 
     if (!inplace) {
-        compile "au.org.ala.plugins.grails:biocache-hubs:2.1.6-SNAPSHOT"
+        compile "au.org.ala.plugins.grails:biocache-hubs:2.1.5"
     }
 
 }
