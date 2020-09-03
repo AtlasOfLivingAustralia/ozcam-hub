@@ -170,7 +170,7 @@
                 <div class="span8">
                     <div id="text-7" class="widget widget_text">
                         <div class="textwidget">
-                            <p><a href="/contributors/"><asset:image src="logo-banner.png" alt="Logos for the various partners of OZCAM" /></a></p>
+                            <p><a href="https://ozcam.org.au/contributors/"><asset:image src="logo-banner.png" alt="Logos for the various partners of OZCAM" /></a></p>
                             <p>OZCAM is an initiative of the Council of Heads of Australian Faunal Collections (CHAFC)</p>
                         </div>
                     </div>
