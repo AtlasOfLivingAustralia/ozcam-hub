@@ -171,7 +171,7 @@
                     <div id="text-7" class="widget widget_text">
                         <div class="textwidget">
                             <p><a href="https://ozcam.org.au/contributors/"><asset:image src="logo-banner.png" alt="Logos for the various partners of OZCAM" /></a></p>
-                            <p>OZCAM is an initiative of the Council of Heads of Australian Faunal Collections (CHAFC)</p>
+                            <p>OZCAM is an initiative of the <a href="https://chafc.org.au/">Council of Heads of Australian Faunal Collections (CHAFC)</a></p>
                         </div>
                     </div>
                 </div> <!-- /span8 -->
@@ -183,7 +183,7 @@
     </footer>
     <div class="footer hide">
         <div style="float: right;padding-right:30px;"><a href="https://ala.org.au/"><asset:image src="ALA-powered-by-logo-inline.png" class="poweredByAlaLogo"/></a></div>
-        <span style="padding-left:80px;">OZCAM is an initiative of the Council of Heads of Australian Faunal Collections (CHAFC)</span>
+        <span style="padding-left:80px;">OZCAM is an initiative of the <a href="https://chafc.org.au/">Council of Heads of Australian Faunal Collections (CHAFC)</a></span>
     </div>
 </div>
 <%--<script type="text/javascript">--%>
