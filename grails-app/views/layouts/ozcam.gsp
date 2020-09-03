@@ -125,7 +125,7 @@
                         <a href="http://ozcam.org.au/about/">About</a>
                     </li>
                     <li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-41 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-46">
-                        <a href="http://ozcam.org.au/contributors/"><span>Contributors</span></a>
+                        <a href="https://ozcam.org.au/contributors/"><span>Contributors</span></a>
                         %{--<a href="http://ozcam.org.au/contributors/" class="dropdown-toggle" data-toggle="dropdown">Contributors <span class="caret"></span></a>--}%
                         %{--<ul class="dropdown-menu pull-right">--}%
                             %{--<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-117"><a href="/contributors#ala">Atlas of Living Australia</a></li>--}%
