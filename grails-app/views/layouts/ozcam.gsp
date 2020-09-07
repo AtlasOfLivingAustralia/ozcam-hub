@@ -113,13 +113,13 @@
 <div class="navbar navbar-inverse navbar-relative-top">
     <div class="navbar-inner">
         <div class="${containerType}">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <a class="brand" href="https://ozcam.org.au/" title="OZCAM" rel="home">OZCAM</a>
-            <div class="navbar-collapse collapsea wam-right">
+            <div class="navbar-collapse collapse wam-right">
                 <ul id="main-menu" class="nav navbar-nav">
                     <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47">
                         <a href="https://ozcam.org.au/about/">About</a>
