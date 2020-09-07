@@ -119,7 +119,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="brand" href="https://ozcam.org.au/" title="OZCAM" rel="home">OZCAM</a>
-            <div class="nav-collapse wam-right">
+            <div class="navbar-collapse collapsea wam-right">
                 <ul id="main-menu" class="nav navbar-nav">
                     <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47">
                         <a href="https://ozcam.org.au/about/">About</a>
