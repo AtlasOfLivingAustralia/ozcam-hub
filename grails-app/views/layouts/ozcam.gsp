@@ -113,20 +113,20 @@
 <div class="navbar navbar-inverse navbar-relative-top">
     <div class="navbar-inner">
         <div class="${containerType}">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="http://ozcam.org.au/" title="OZCAM" rel="home">OZCAM</a>
-            <div class="nav-collapse wam-right">
+            <a class="brand" href="https://ozcam.org.au/" title="OZCAM" rel="home">OZCAM</a>
+            <div class="navbar-collapse collapse wam-right">
                 <ul id="main-menu" class="nav navbar-nav">
                     <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47">
-                        <a href="http://ozcam.org.au/about/">About</a>
+                        <a href="https://ozcam.org.au/about/">About</a>
                     </li>
                     <li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-41 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-46">
-                        <a href="http://ozcam.org.au/contributors/"><span>Contributors</span></a>
-                        %{--<a href="http://ozcam.org.au/contributors/" class="dropdown-toggle" data-toggle="dropdown">Contributors <span class="caret"></span></a>--}%
+                        <a href="https://ozcam.org.au/contributors/"><span>Contributors</span></a>
+                        %{--<a href="https://ozcam.org.au/contributors/" class="dropdown-toggle" data-toggle="dropdown">Contributors <span class="caret"></span></a>--}%
                         %{--<ul class="dropdown-menu pull-right">--}%
                             %{--<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-117"><a href="/contributors#ala">Atlas of Living Australia</a></li>--}%
                             %{--<li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-50"><a href="/contributors#australian-museum">Australian Museum</a></li>--}%
@@ -141,7 +141,7 @@
                         %{--</ul>--}%
                     </li>
                     <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45">
-                        <a href="http://ozcam.org.au/news/">News</a>
+                        <a href="https://ozcam.org.au/news/">News</a>
                     </li>
                 </ul>
             </div>
@@ -170,8 +170,8 @@
                 <div class="span8">
                     <div id="text-7" class="widget widget_text">
                         <div class="textwidget">
-                            <p><a href="/contributors/"><asset:image src="logo-banner.png" alt="Logos for the various partners of OZCAM" /></a></p>
-                            <p>OZCAM is an initiative of the Council of Heads of Australian Faunal Collections (CHAFC)</p>
+                            <p><a href="https://ozcam.org.au/contributors/"><asset:image src="logo-banner.png" alt="Logos for the various partners of OZCAM" /></a></p>
+                            <p>OZCAM is an initiative of the <a href="https://chafc.org.au/">Council of Heads of Australian Faunal Collections (CHAFC)</a></p>
                         </div>
                     </div>
                 </div> <!-- /span8 -->
@@ -183,7 +183,7 @@
     </footer>
     <div class="footer hide">
         <div style="float: right;padding-right:30px;"><a href="https://ala.org.au/"><asset:image src="ALA-powered-by-logo-inline.png" class="poweredByAlaLogo"/></a></div>
-        <span style="padding-left:80px;">OZCAM is an initiative of the Council of Heads of Australian Faunal Collections (CHAFC)</span>
+        <span style="padding-left:80px;">OZCAM is an initiative of the <a href="https://chafc.org.au/">Council of Heads of Australian Faunal Collections (CHAFC)</a></span>
     </div>
 </div>
 <%--<script type="text/javascript">--%>
