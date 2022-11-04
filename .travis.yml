@@ -1,12 +1,13 @@
 language: groovy
 jdk:
-- openjdk8
+- openjdk11
 sudo: false
 branches:
   only:
   - master
   - hotfix
   - develop
+  - epic/cloud-uplift/develop
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -23,5 +24,6 @@ after_success:
 
 env:
   global:
+  - JAVA_TOOL_OPTIONS=-Dhttps.protocols=TLSv1.2
   - secure: LwXcZAbpWUcooTefH3H+0ftahmDknKDw5497nf2NyJAUKRcUKiThWcMBp0eROUAiPmN1AE7eCOJeMkifK9opI2GRIflNYJtCQBSNd4mHPyLlvJ9EOw1TRSQEQ7wUX29D8N1q1YZLnJLlUcdoZSH1lENk1rOOmVIzYL0hO9Q1hAc=
   - secure: aYxGH0GxDaiYqLaEVdt3om1SO3rKm3RaamG5Va+AlZ38LVicR0F5tJW6zo1j7+4TKzc2FDrHo7kS/tNuwtcsB77Q9jpTFB921d5J61KyFkPZKeffVxV7nXBa7F42gIoeeLrj6gX4nsJb3hYAaWO7uRq5VtyLQmgY/R9dzkWZmcc=
