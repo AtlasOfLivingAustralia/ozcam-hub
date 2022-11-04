@@ -124,7 +124,7 @@ dependencies {
     compile 'xml-apis:xml-apis:1.4.01'
 
     if (!inplace) {
-        compile "au.org.ala.plugins.grails:biocache-hubs:5.0-SNAPSHOT", noCache
+        compile "au.org.ala.plugins.grails:biocache-hubs:5.0", noCache
         compile "au.org.ala.plugins.grails:downloads-plugin:3.0", noCache
     }
 }
