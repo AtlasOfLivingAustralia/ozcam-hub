@@ -24,7 +24,6 @@ ext {
 }
 // version updated to match biocache-hubs
 version "5.0-SNAPSHOT"
-
 group "au.org.ala"
 
 apply plugin:"eclipse"
