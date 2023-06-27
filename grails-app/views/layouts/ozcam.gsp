@@ -1,5 +1,5 @@
-<g:set var="orgNameLong" value="${grailsApplication.config.skin.orgNameLong}"/>
-<g:set var="orgNameShort" value="${grailsApplication.config.skin.orgNameShort}"/>
+<g:set var="orgNameLong" value="${grailsApplication.config.getProperty('skin.orgNameLong')}"/>
+<g:set var="orgNameShort" value="${grailsApplication.config.getProperty('skin.orgNameShort')}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -106,7 +106,7 @@
 
 </head>
 <body class="${pageProperty(name:'body.class')?:'nav-collections'}" id="${pageProperty(name:'body.id')}" onload="${pageProperty(name:'body.onload')}">
-<g:set var="fluidLayout" value="${grailsApplication.config.skin.fluidLayout?.toBoolean()}"/>
+<g:set var="fluidLayout" value="${grailsApplication.config.getProperty('skin.fluidLayout', Boolean, false)}"/>
 <g:set var="containerType" value="${fluidLayout ? 'container-fluid' : 'container'}"/>
 <ala:systemMessage />
 <div class="hero-bg"></div>

@@ -1,5 +1,5 @@
-<g:set var="orgNameLong" value="${grailsApplication.config.skin.orgNameLong}"/>
-<g:set var="orgNameShort" value="${grailsApplication.config.skin.orgNameShort}"/>
+<g:set var="orgNameLong" value="${grailsApplication.config.getProperty('skin.orgNameLong')}"/>
+<g:set var="orgNameShort" value="${grailsApplication.config.getProperty('skin.orgNameShort')}"/>
 <!DOCTYPE html>
 <html>
 <head>
