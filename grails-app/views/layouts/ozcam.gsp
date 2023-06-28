@@ -19,6 +19,8 @@
 
     <asset:javascript src="bootstrap.min.js" />
 
+    <script src="https://cdn.usefathom.com/script.js" data-site="QDWZORBB" defer></script>
+
     <g:render template="/layouts/global" plugin="biocache-hubs"/>
 
    <g:layoutHead />
