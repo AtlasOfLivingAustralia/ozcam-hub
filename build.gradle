@@ -24,7 +24,7 @@ ext {
     }
 }
 // version updated to match biocache-hubs
-version "6.0.1"
+version "6.0.2"
 group "au.org.ala"
 
 apply plugin:"eclipse"
@@ -125,7 +125,7 @@ dependencies {
     implementation 'xml-apis:xml-apis:1.4.01'
 
     if (!inplace) {
-        implementation "au.org.ala.plugins.grails:biocache-hubs:6.0.1", noCache
+        implementation "au.org.ala.plugins.grails:biocache-hubs:6.0.2", noCache
         implementation "au.org.ala.plugins.grails:downloads-plugin:4.0.0", noCache
     }
 }
