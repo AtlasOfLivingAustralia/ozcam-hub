@@ -1,5 +1,9 @@
 ### ozcam-hub   [![Build Status](https://travis-ci.org/AtlasOfLivingAustralia/ozcam-hub.svg?branch=master)](https://travis-ci.org/AtlasOfLivingAustralia/ozcam-hub)
 
+## Versions
+- 8.x version, Java 17
+- 7.x version, Java 11
+
 Deploying a new version of ozcam-hub to Nexus
 ===========================================
 
