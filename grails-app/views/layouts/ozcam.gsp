@@ -21,6 +21,11 @@
 
     <script src="https://cdn.usefathom.com/script.js" data-site="QDWZORBB" defer></script>
 
+    <g:if test="${grailsApplication.config.getProperty('headerAndFooter.challengeJsUrl')}">
+        <script type="text/javascript"
+                src="${grailsApplication.config.getProperty('headerAndFooter.challengeJsUrl')}" defer></script>
+    </g:if>
+
     <g:render template="/layouts/global" plugin="biocache-hubs"/>
 
    <g:layoutHead />
